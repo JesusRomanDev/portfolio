@@ -3,7 +3,7 @@ import React from 'react'
 const Nieto = (prueba) => {
     // console.log(prueba);
   return (
-    <div>Nieto</div>
+    <div className='text-center'>Nieto</div>
   )
 }
 
