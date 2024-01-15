@@ -14,11 +14,11 @@
     } */
 
     .navCustom{
-        @apply hover:text-white relative
+        @apply hover:text-orange-700 relative duration-300
     }
 
     .navCustom::after{
-        @apply absolute content-[''] bg-red-500 h-[3px] w-[0] left-0 -bottom-1 rounded-xl
+        @apply absolute content-[''] bg-red-500 h-[3px] w-[0] left-0 -bottom-1 rounded-xl duration-300
     }
 
     .navCustom:hover::after{
