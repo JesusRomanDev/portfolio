@@ -6,6 +6,7 @@ import Padre from './components/Padre';
 import Hijo from './components/Hijo';
 import Nieto from './components/Nieto';
 import AboutMe from './components/AboutMe';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <AuthProvider>
         <Heading />
         <AboutMe />
+        <Footer />
       </AuthProvider>
       {/* <Padre>
         <Hijo>
