@@ -5,6 +5,7 @@ import { AuthProvider } from './context/UseContext';
 import Padre from './components/Padre';
 import Hijo from './components/Hijo';
 import Nieto from './components/Nieto';
+import AboutMe from './components/AboutMe';
 
 function App() {
 
@@ -12,14 +13,15 @@ function App() {
     <>
       <AuthProvider>
         <Heading />
+        <AboutMe />
       </AuthProvider>
-      <Padre>
+      {/* <Padre>
         <Hijo>
           <Nieto>
 
           </Nieto>
         </Hijo>
-      </Padre>
+      </Padre> */}
     </>
       
   )
