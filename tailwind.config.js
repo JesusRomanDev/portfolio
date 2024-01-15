@@ -6,7 +6,18 @@ export default {
       'inter': [ 'Inter', 'system-ui', 'Avenir'],
       'culera': ['Lemon']
     },
-    extend: {},
+    extend: {
+      keyframes:{
+        fullSpin:{
+          '100%':{
+            transform: 'rotate(-360deg)'
+          }
+        }
+      },
+      animation:{
+        fullSpin:'fullSpin 3s linear infinite'
+      }
+    },
   },
   plugins: [],
 }

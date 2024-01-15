@@ -10,7 +10,6 @@ function App() {
 
   return (
     <>
-      <h1 className='block text-center'>Hi, my name is Jesus Eduardo</h1>
       <AuthProvider>
         <Heading />
       </AuthProvider>

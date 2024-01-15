@@ -4,4 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components{
+    .box::before{
+        @apply content-[''] absolute bg-[conic-gradient(#348ceb_20deg,transparent_120deg)] w-[500px] h-[400px] left-[-10%] top-[-400%] animate-fullSpin
+    }
+
+    .box::after{
+        @apply content-[''] text-white w-[90%] h-[90%] bg-[red] absolute top-[5%] left-[3%] flex justify-center items-center uppercase
+    }
+}
+
 
