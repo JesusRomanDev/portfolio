@@ -19,12 +19,12 @@ const AboutMe = () => {
                 <p className='mt-5 font-semibold'>Based in <span className='text-red-500'>Monterrey Nuevo Leon, Mexico.</span> </p>
                 <p className='font-semibold mt-5'>Graduated in Universidad Autonoma de Nuevo Leon as a Mechatronics Engineer, i'm a passionate person about the tech industry and everything that involves it, open to challenges, currently looking for my first job as a developer.</p>
 
-                <p className='font-semibold'>Previously i had experience as a Product Engineer, but after some time i realized that i wanted to go after what i enjoy the most, to <span className='text-red-500'> &lt; code &gt; </span> .</p>
+                <p className='font-semibold'>Previously i had experience as a Product Engineer working with International Companies, but after some time i realized that i wanted to go after what i enjoy the most, to <span className='text-red-500'> &lt; code &gt; </span> .</p>
             </div>
             <div className='w-1/4 flex flex-col justify-center items-center'>
                 <img className='sliderUp' src="../../images/dev.png" alt="" />
                 <div>
-                    <button className='hover:bg-slate-400 hover:scale-110 hover:duration-300 ease-out duration-300 text-xl text-white font-semibold p-2 bg-slate-500 rounded-md'>Download CV</button>       
+                    <button className='hover:bg-slate-400 hover:scale-110 hover:duration-300 ease-out duration-300 text-xl text-white font-semibold p-2 bg-slate-600 rounded-md'>Download CV</button>       
                 </div>
             </div>
         </section>

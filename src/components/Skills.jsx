@@ -20,6 +20,7 @@ const Skills = () => {
                 <div className='hover:scale-125 hover:bg-slate-900 hover:duration-300 ease-out duration-300 gap-y-2 border-2 rounded-md border-slate-300 flex flex-col justify-center items-center bg-slate-600 h-36 w-36'><img className='w-20 h-20' src="../../images/git.png" alt="" /><p className='text-white font-bold'>Git</p></div>
                 <div className='hover:scale-125 hover:bg-slate-900 hover:duration-300 ease-out duration-300 gap-y-2 border-2 rounded-md border-slate-300 flex flex-col justify-center items-center bg-slate-600 h-36 w-36'><img className='w-20 h-20' src="../../images/github.png" alt="" /><p className='text-white font-bold'>GitHub</p></div>
                 <div className='hover:scale-125 hover:bg-slate-900 hover:duration-300 ease-out duration-300 gap-y-2 border-2 rounded-md border-slate-300 flex flex-col justify-center items-center bg-slate-600 h-36 w-36'><img className='w-20 h-20' src="../../images/cy.png" alt="" /><p className='text-white font-bold'>Cypress</p></div>
+                <div className='hover:scale-125 hover:bg-slate-900 hover:duration-300 ease-out duration-300 gap-y-2 border-2 rounded-md border-slate-300 flex flex-col justify-center items-center bg-slate-600 h-36 w-36'><img className='w-20 h-20' src="../../images/photoshop.png" alt="" /><p className='text-white font-bold'>Photoshop</p></div>
             </div>
         </section>
 
