@@ -7,7 +7,7 @@ const Footer = () => {
             <div className='flex flex-col gap-5 w-full'>
                 <div className='flex justify-evenly'>
                     <div>
-                        <p>Jesus Roman</p>
+                        <p>Eduardo Roman</p>
                         <p>Front End Developer</p>
                     </div>
                     <div className='flex-col gap-5'>

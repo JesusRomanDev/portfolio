@@ -10,7 +10,7 @@ const AboutMe = () => {
     });
   return (
     <>
-        <section className='mt-20 w-4/5 h-1/2 mx-auto flex gap-5 justify-center'>
+        <section className='mt-15 w-4/5 h-1/2 mx-auto flex gap-5 justify-center'>
             <div className='w-1/2 flex flex-col justify-center text-white'>
                 <h1 className='text-left block text-4xl'>Hi, my name is <span className='font-bold text-red-800'>Jesus Eduardo</span></h1>
                 <h2 className='font-black mt-5'>
