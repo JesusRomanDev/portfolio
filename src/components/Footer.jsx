@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <>
-        <footer className=' p-4 fixed w-full left-0 flex justify-evenly bg-slate-600 bottom-0'>
+        <footer className=' p-4 h-10% w-full left-0 flex justify-evenly bg-slate-600 bottom-0'>
             <div className='flex flex-col gap-5 w-full'>
                 <div className='flex justify-evenly'>
                     <div>
