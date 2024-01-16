@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import AuthContext from '../context/UseContext'
 import {useTypewriter, Cursor} from 'react-simple-typewriter'
+import { Link } from 'react-router-dom'
 
 function Heading() {
     const [count, setCount] = useState(0)
@@ -29,12 +30,12 @@ function Heading() {
         </div>
         <div className='flex justify-center place-items-center'>
           <nav className='flex-col sm:flex-row relative overflow-hidden flex gap-x-4 p-3 text-white'>
-            <a href="" className='navCustom'>Home</a>
-            <a href="" className='navCustom'>About me</a>
-            <a href="" className='navCustom'>Education</a>
-            <a href="" className='navCustom'>Skills</a>
-            <a href="" className='navCustom'>Projects</a>
-            <a href="" className='navCustom'>Contact</a>
+            <Link className='navCustom' to="/">Home</Link>
+            <Link className='navCustom' to="/">About me</Link>
+            <Link className='navCustom' to="/">Skills</Link>
+            <Link className='navCustom' to="/">Education</Link>
+            <Link className='navCustom' to="/">Projects</Link>
+            <Link className='navCustom' to="/">Contact</Link>
           </nav>
         </div>
       </section>

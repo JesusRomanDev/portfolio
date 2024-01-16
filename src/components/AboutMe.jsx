@@ -23,6 +23,9 @@ const AboutMe = () => {
             </div>
             <div className='w-1/4 flex flex-col justify-center items-center'>
                 <img className='sliderUp' src="../../images/dev.png" alt="" />
+                <div>
+                    <button className='hover:bg-slate-400 hover:scale-110 hover:duration-300 ease-out duration-300 text-xl text-white font-semibold p-2 bg-slate-500 rounded-md'>Download CV</button>       
+                </div>
             </div>
         </section>
     </>
