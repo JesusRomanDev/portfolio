@@ -32,9 +32,9 @@ function App() {
         <Heading />
         <AboutMe />
         <Skills />
-        <div className='w-[30%] m-auto'>
+        <section className='w-[30%] m-auto'>
           <Projects slides={slides} />
-        </div>
+        </section>
         <Footer />
       </AuthProvider>
       {/* <Padre>
