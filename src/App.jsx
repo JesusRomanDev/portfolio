@@ -14,11 +14,11 @@ function App() {
   let slides = [
     {
       id: 0,
-      image: "../images/asuka.png"
+      image: "../images/todoList.png"
     },
     {
       id:1,
-      image: "../images/css.png"
+      image: "../images/creditCard.png"
     },
     {
       id:2,
