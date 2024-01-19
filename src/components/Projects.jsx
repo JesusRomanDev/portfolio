@@ -118,7 +118,7 @@ const Projects = ({slides}) => {
 
             <div className='absolute bottom-12 left-0 flex w-full'>
                 {project.map(t =>{
-                    return <div key={t.id}><img className={`max-w-20 hover:scale-110 z-30`} key={t.id} src={t.tech} /></div>
+                    return <div className='flex items-center' key={t.id}><img className={`max-w-20 hover:scale-110 z-30`} key={t.id} src={t.tech} /></div>
                 })}
             </div>
         </section>
