@@ -93,7 +93,7 @@ const Projects = ({slides}) => {
     
   return (
     <>
-        <h3 id='projects' className='py-6 flex justify-center text-white font-bold text-3xl'>Some Projects</h3>
+        <h3 id='projects' className='py-10 flex justify-center text-white font-bold text-3xl'>Some Projects</h3>
         <section className="mb-6 w-full overflow-hidden relative hover:scale-110 hover:duration-300 ease-out duration-300">
             <div style={{transform:`translateX(-${current * 100}%)`}} className={`relative flex transition ease-in-out duration-500`}>
                 {slides.map(s=>{

@@ -3,7 +3,7 @@ import React from 'react'
 const Skills = () => {
   return (
     <>
-        <section id='skills' className='bg-slate-500 flex flex-col justify-center items-center'>
+        <section id='skills' className='py-5 bg-slate-500 flex flex-col justify-center items-center'>
             <h2 className='font-bold text-white text-3xl p-5'>Skills</h2>
             <div className='grid w-1/2 place-items-center grid-cols-5 gap-y-20 mb-14'>
                 <div className='hover:scale-125 hover:bg-slate-900 hover:duration-300 ease-out duration-300 gap-y-2 border-2 rounded-md border-slate-300 flex flex-col justify-center items-center bg-slate-600 h-36 w-36'><img className='w-20 h-20' src="../../images/HTML5_badge.png" alt="" /><p className='text-white font-bold'>HTML</p></div>
