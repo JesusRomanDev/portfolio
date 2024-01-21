@@ -30,7 +30,7 @@ function Heading() {
         </div>
         <div className='flex justify-center place-items-center'>
           <nav className='flex-col sm:flex-row relative overflow-hidden flex gap-x-4 p-3 text-white'>
-            <Link className='navCustom' to="/">Home</Link>
+            <Link className='navCustom active' to="/">Home</Link>
             <Link className='navCustom' to="/">About me</Link>
             <Link className='navCustom' to="/">Skills</Link>
             <Link className='navCustom' to="/">Education</Link>

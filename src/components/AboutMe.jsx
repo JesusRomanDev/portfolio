@@ -17,7 +17,7 @@ const AboutMe = () => {
                     I'm a<span className='text-red-700'> {text}</span><Cursor cursorColor='red' />
                 </h2>
                 <p className='mt-5 font-semibold'>Based in <span className='text-red-500'>Monterrey Nuevo Leon, Mexico.</span> </p>
-                <p className='font-semibold mt-5'>Graduated in Universidad Autonoma de Nuevo Leon as a Mechatronics Engineer, i'm a passionate person about the tech industry and everything that involves it, open to challenges, currently looking for my first job as a developer.</p>
+                <p className='font-semibold mt-5'>Graduated in Universidad Autonoma de Nuevo Leon as a <span className='text-red-500'>Mechatronics Engineer</span>, i'm a passionate person about the tech industry and everything that involves it, open to challenges, currently looking for my first job as a developer.</p>
 
                 <p className='font-semibold'>Previously i had experience as a Product Engineer working with International Companies, but after some time i realized that i wanted to go after what i enjoy the most, to <span className='text-red-500'> &lt; code &gt; </span> .</p>
             </div>

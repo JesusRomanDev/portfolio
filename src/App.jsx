@@ -9,6 +9,7 @@ import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
 import Footer from './components/Footer';
 import Projects from './components/Projects';
+import Education from './components/Education';
 
 function App() {
   let slides = [
@@ -32,6 +33,7 @@ function App() {
         <Heading />
         <AboutMe />
         <Skills />
+        <Education />
         <section className='w-[30%] m-auto'>
           <Projects slides={slides} />
         </section>
