@@ -14,7 +14,7 @@
     } */
 
     .navCustom{
-        @apply hover:text-orange-700 relative duration-300
+        @apply hover:text-orange-700 relative duration-300 cursor-pointer
     }
 
     .navCustom::after{
