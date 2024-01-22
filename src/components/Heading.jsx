@@ -45,10 +45,10 @@ function Heading() {
         <div className='flex justify-center place-items-center'>
           <nav className='flex-col sm:flex-row relative overflow-hidden flex gap-x-4 p-3 text-white'>
             {/* <Link onClick={topPage} to='/' spy={true} smooth={true} hashSpy={true} offset={-500} activeClass='colores' duration={500} className='navCustom'>Home</Link> */}
-            <Link to="about" spy={true} smooth={true} hashSpy={true} offset={-200} duration={500} activeClass='colores' className='navCustom'>About me</Link>
-            <Link to="skills" spy={true} smooth={true} hashSpy={true} offset={-100} duration={500} activeClass='colores' className='navCustom'>Skills</Link>
-            <Link to="education" spy={true} smooth={true} hashSpy={true} offset={-100} duration={500} activeClass='colores' className='navCustom'>Education</Link>
-            <Link to="projects" spy={true} smooth={true} hashSpy={true} offset={-100} duration={500} activeClass='colores' className='navCustom'>Projects</Link>
+            <Link to="about" spy={true} smooth={true} hashSpy={true} offset={-300} duration={500} activeClass='colores' className='navCustom'>About me</Link>
+            <Link to="skills" spy={true} smooth={true} hashSpy={true} offset={-200} duration={500} activeClass='colores' className='navCustom'>Skills</Link>
+            <Link to="education" spy={true} smooth={true} hashSpy={true} offset={-200} duration={500} activeClass='colores' className='navCustom'>Education</Link>
+            <Link to="projects" spy={true} smooth={true} hashSpy={true} offset={-150} duration={500} activeClass='colores' className='navCustom'>Projects</Link>
             <Link to="contact" spy={true} smooth={true} hashSpy={true} offset={50} duration={500} className='navCustom'>Contact</Link>
           </nav>
         </div>

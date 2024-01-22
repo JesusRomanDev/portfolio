@@ -93,33 +93,32 @@ const Projects = ({slides}) => {
     
   return (
     <>
-        <h3 id='projects' className='py-10 flex justify-center text-white font-bold text-3xl'>Some Projects</h3>
-        <section className="mb-6 w-full overflow-hidden relative hover:scale-110 hover:duration-300 ease-out duration-300">
-            <div style={{transform:`translateX(-${current * 100}%)`}} className={`relative flex transition ease-in-out duration-500`}>
-                {slides.map(s=>{
-                return <img className='object-contain min-w-full' src={s.image} key={s.id} />
-                })}
-            </div>
-
-            <div className='absolute top-0 h-full w-full flex justify-between items-center text-white px-10 text-3xl'>
-                <button className='z-40 hover:scale-125 hover:duration-300 ease-out duration-300' onClick={previousSlide}>
-                    <FaArrowCircleLeft />
-                </button>
-                <button className='z-40 hover:scale-125 hover:duration-300 ease-out duration-300' onClick={nextSlide}>
-                    <FaArrowCircleRight />
-                </button>
-            </div>
-
-            <div className='z-40 absolute bottom-0 py-4 flex justify-center gap-10 w-full'>
-                {slides.map((s)=> {
-                    return <div onClick={()=>{setCurrent(s.id)}} key={s.id} className={`hover:scale-125 hover:duration-300 ease-out duration-300  cursor-pointer rounded-full w-5 h-5 ${s.id==current ? "bg-white" : "bg-gray-700"}`}></div>
-                })}
-            </div>
-
-            <div className='absolute bottom-12 left-0 flex w-full'>
-                {project.map(t =>{
-                    return <div className='flex items-center' key={t.id}><img className={`max-w-20 hover:scale-110 z-30`} key={t.id} src={t.tech} /></div>
-                })}
+        <section className='w-[30%] m-auto'>
+            <h3 id='projects' className='pt-10 flex justify-center text-white font-bold text-3xl'>Some Projects</h3>
+            <div className="mb-6 w-full overflow-hidden relative hover:scale-110 hover:duration-300 ease-out duration-300">
+                <div style={{transform:`translateX(-${current * 100}%)`}} className={`relative flex transition ease-in-out duration-500`}>
+                    {slides.map(s=>{
+                    return <img className='object-contain min-w-full' src={s.image} key={s.id} />
+                    })}
+                </div>
+                <div className='absolute top-0 h-full w-full flex justify-between items-center text-white px-10 text-3xl'>
+                    <button className='z-40 hover:scale-125 hover:duration-300 ease-out duration-300' onClick={previousSlide}>
+                        <FaArrowCircleLeft />
+                    </button>
+                    <button className='z-40 hover:scale-125 hover:duration-300 ease-out duration-300' onClick={nextSlide}>
+                        <FaArrowCircleRight />
+                    </button>
+                </div>
+                <div className='z-40 absolute bottom-0 py-4 flex justify-center gap-10 w-full'>
+                    {slides.map((s)=> {
+                        return <div onClick={()=>{setCurrent(s.id)}} key={s.id} className={`hover:scale-125 hover:duration-300 ease-out duration-300  cursor-pointer rounded-full w-5 h-5 ${s.id==current ? "bg-white" : "bg-gray-700"}`}></div>
+                    })}
+                </div>
+                <div className='absolute bottom-12 left-0 flex w-full'>
+                    {project.map(t =>{
+                        return <div className='flex items-center' key={t.id}><img className={`max-w-20 hover:scale-110 z-30`} key={t.id} src={t.tech} /></div>
+                    })}
+                </div>
             </div>
         </section>
     </>

@@ -34,7 +34,7 @@ function App() {
         <AboutMe />
         <Skills />
         <Education />
-        <section className='w-[30%] m-auto'>
+        <section className='bg-slate-500'>
           <Projects slides={slides} />
         </section>
         <Footer />
