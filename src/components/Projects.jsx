@@ -102,10 +102,10 @@ const Projects = ({slides}) => {
                     })}
                 </div>
                 <div className='absolute top-0 h-full w-full flex justify-between items-center text-white px-10 text-3xl'>
-                    <button className='z-40 hover:scale-125 hover:duration-300 ease-out duration-300' onClick={previousSlide}>
+                    <button aria-label='previous slide' className='z-40 hover:scale-125 hover:duration-300 ease-out duration-300' onClick={previousSlide}>
                         <FaArrowCircleLeft />
                     </button>
-                    <button className='z-40 hover:scale-125 hover:duration-300 ease-out duration-300' onClick={nextSlide}>
+                    <button aria-label='next slide' className='z-40 hover:scale-125 hover:duration-300 ease-out duration-300' onClick={nextSlide}>
                         <FaArrowCircleRight />
                     </button>
                 </div>
