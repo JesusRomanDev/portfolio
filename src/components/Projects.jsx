@@ -8,18 +8,21 @@ const Projects = ({slides}) => {
         {
             id:0,
             proyecto: 0,
-            tech: "../../images/HTML5_badge.png"
+            tech: "../../images/HTML5_badge.png",
+            alt: "HTML"
     
         },
         {   
             id:1,
             proyecto: 0,
             tech: "../../images/css.png",
+            alt: "CSS"
         },
         {   
             id:2,
             proyecto: 0,
-            tech: "../../images/js.png"
+            tech: "../../images/js.png",
+            alt: "JavaScript"
         }
     ]
 
@@ -27,18 +30,21 @@ const Projects = ({slides}) => {
         {
             id:3,
             proyecto: 1,
-            tech: "../../images/HTML5_badge.png"
+            tech: "../../images/HTML5_badge.png",
+            alt: "HTML"
     
         },
         {   
             id:4,
             proyecto: 1,
             tech: "../../images/css.png",
+            alt: "CSS"
         },
         {   
             id:5,
             proyecto: 1,
-            tech: "../../images/node.png"
+            tech: "../../images/node.png",
+            alt: "JavaScript"
         }
     ]
 
@@ -46,18 +52,21 @@ const Projects = ({slides}) => {
         {
             id:6,
             proyecto: 1,
-            tech: "../../images/HTML5_badge.png"
+            tech: "../../images/HTML5_badge.png",
+            alt: "HTML"
     
         },
         {   
             id:7,
             proyecto: 1,
             tech: "../../images/css.png",
+            alt: "CSS"
         },
         {   
             id:8,
             proyecto: 1,
-            tech: "../../images/sql.png"
+            tech: "../../images/sql.png",
+            alt: "SQL"
         }
     ]
 
@@ -98,7 +107,7 @@ const Projects = ({slides}) => {
             <div className="w-full overflow-hidden relative hover:scale-110 hover:duration-300 ease-out duration-300">
                 <div style={{transform:`translateX(-${current * 100}%)`}} className={`relative flex transition ease-in-out duration-500`}>
                     {slides.map(s=>{
-                    return <img className='object-contain min-w-full' src={s.image} key={s.id} />
+                    return <img alt={s.alt} className='object-contain min-w-full' src={s.image} key={s.id} />
                     })}
                 </div>
                 <div className='absolute top-0 h-full w-full flex justify-between items-center text-white px-10 text-3xl'>
@@ -116,7 +125,7 @@ const Projects = ({slides}) => {
                 </div>
                 <div className='absolute bottom-12 left-0 flex w-full'>
                     {project.map(t =>{
-                        return <div className='flex items-center' key={t.id}><img className={`max-w-20 hover:scale-110 z-30`} key={t.id} src={t.tech} /></div>
+                        return <div className='flex items-center' key={t.id}><img className={`max-w-20 hover:scale-110 z-30`} alt={t.alt} key={t.id} src={t.tech} /></div>
                     })}
                 </div>
             </div>

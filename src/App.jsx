@@ -15,15 +15,18 @@ function App() {
   let slides = [
     {
       id: 0,
-      image: "../images/todoList.png"
+      image: "../images/todoList.png",
+      alt: "project1"
     },
     {
       id:1,
-      image: "../images/creditCard.png"
+      image: "../images/creditCard.png",
+      alt: "project2"
     },
     {
       id:2,
-      image: "../images/git.png"
+      image: "../images/git.png",
+      alt: "project3"
     }
   ]
 
