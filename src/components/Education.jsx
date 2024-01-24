@@ -11,7 +11,7 @@ const Education = () => {
                   <span className='text-red-500 text-sm font-bold'>Universidad Autonoma de Nuevo León</span>
                   <p className='text-red-500 text-xl font-bold'>Mechatronics Engineer</p>
                   <p className='text-red-500 text-sm'>January 2015-December 2020</p>
-                  <p>Engineering Degree in Mechatronics. Structured programming, microcontrollers, IA and neuronal networks are some of the asignatures that i've saw during my career aswell C++, JavaScript, Python and MathLAB are the languages with what i've worked with. </p>
+                  <p>Engineering Degree in Mechatronics. Structured programming, microcontrollers, IA and neuronal networks are some of the asignatures that i've saw during my career aswell C++, JavaScript, Python and MathLAB are the languages with which I've worked with. </p>
                   <div className='absolute h-0.5 w-12 bg-slate-100 top-1/2 -right-12'>
                     <div className='relative bottom-1 block w-2.5 h-2.5 rounded-e-full rounded-t-full rounded-r-full rounded-b-full rounded-l-full left-full bg-slate-100'></div>
                   </div>
