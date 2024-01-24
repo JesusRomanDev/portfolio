@@ -16,17 +16,20 @@ function App() {
     {
       id: 0,
       image: "../images/todoList.png",
-      alt: "project1"
+      alt: "project1",
+      title: "Todo List"
     },
     {
       id:1,
       image: "../images/creditCard.png",
-      alt: "project2"
+      alt: "project2",
+      title: "Credit Card"
     },
     {
       id:2,
       image: "../images/git.png",
-      alt: "project3"
+      alt: "project3",
+      title: "Ejemplo"
     }
   ]
 

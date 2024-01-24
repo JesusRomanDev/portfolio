@@ -10,7 +10,6 @@ const Projects = ({slides}) => {
             proyecto: 0,
             tech: "../../images/HTML5_badge.png",
             alt: "HTML"
-    
         },
         {   
             id:1,
@@ -32,7 +31,6 @@ const Projects = ({slides}) => {
             proyecto: 1,
             tech: "../../images/HTML5_badge.png",
             alt: "HTML"
-    
         },
         {   
             id:4,
@@ -54,7 +52,6 @@ const Projects = ({slides}) => {
             proyecto: 1,
             tech: "../../images/HTML5_badge.png",
             alt: "HTML"
-    
         },
         {   
             id:7,
@@ -69,9 +66,12 @@ const Projects = ({slides}) => {
             alt: "SQL"
         }
     ]
+    
+    let detallesarr=[[{titulo: "Todo List", descripcion: "Descripcion"}],[{titulo: "Credit Card", descripcion: "Descripcion"}],[{titulo: "Tercero",descripcion: "Descripcion"}]]
 
     let [current, setCurrent] = useState(0);
     let [project, setProject] = useState(lang);
+    let [details, setDetails] = useState(detallesarr);
 
 
     let previousSlide = () => {
@@ -99,6 +99,16 @@ const Projects = ({slides}) => {
             return setProject(lang3)
         }
     }, [current])
+
+    useEffect(()=>{
+        if(current === 0){
+            return setDetails(detallesarr[0])
+        }if (current === 1) {
+            return setDetails(detallesarr[1])
+        } if(current === 2) {
+            return setDetails(detallesarr[2])
+        }
+    }, [current])
     
   return (
     <>
@@ -124,6 +134,9 @@ const Projects = ({slides}) => {
                     })}
                 </div>
                 <div className='absolute bottom-12 left-0 flex w-full'>
+                    {details.map(m=> {
+                        return <p>{m.titulo}</p>
+                    })}
                     {project.map(t =>{
                         return <div className='flex items-center' key={t.id}><img className={`max-w-20 hover:scale-110 z-30`} alt={t.alt} key={t.id} src={t.tech} /></div>
                     })}
