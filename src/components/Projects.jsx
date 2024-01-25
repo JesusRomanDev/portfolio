@@ -67,11 +67,11 @@ const Projects = ({slides}) => {
         }
     ]
 
-    let detallesArr=[[{titulo: "Todo List", descripcion: "Descripcion"}],[{titulo: "Credit Card", descripcion: "Descripcion"}],[{titulo: "Tercero",descripcion: "Descripcion"}]]
+    let detallesArr=[[{titulo: "Todo List", descripcion: "Descripcion", id:10}],[{titulo: "Credit Card", descripcion: "Descripcion", id:20}],[{titulo: "Tercero",descripcion: "Descripcion", id:30}]]
 
     let [current, setCurrent] = useState(0);
     let [project, setProject] = useState(lang);
-    let [details, setDetails] = useState(detallesArr);
+    let [details, setDetails] = useState(detallesArr[0]);
 
 
     let previousSlide = () => {
@@ -135,7 +135,7 @@ const Projects = ({slides}) => {
                 </div>
                 <div className='absolute bottom-12 left-0 flex w-full'>
                     {details.map(m=> {
-                        return <p>{m.titulo}</p>
+                        return <div key={m.id}><p>{m.titulo}</p></div> 
                     })}
                     {project.map(t =>{
                         return <div className='flex items-center' key={t.id}><img className={`max-w-20 hover:scale-110 z-30`} alt={t.alt} key={t.id} src={t.tech} /></div>

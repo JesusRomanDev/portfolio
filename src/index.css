@@ -29,6 +29,10 @@
         animation: sliderUp 3s ease-in-out 0s infinite normal none;
     }
 
+    .sliderX{
+        animation: sliderX 3s ease-in-out 0s infinite normal none;
+    }
+
     .colores{
         @apply text-orange-700 relative duration-300 cursor-pointer
     }
@@ -39,6 +43,10 @@
 
     .colores:after{
         @apply w-[100%]
+    }
+
+    .loader{
+        @apply w-full h-screen z-10 fixed top-0 left-0 bg-black flex justify-center items-center
     }
 }
 
@@ -62,6 +70,28 @@
     100%{
         transform: translateY(10px);
     }
+}
+
+@keyframes sliderX {
+    0%{
+        transform:  translateX(5px) translateY(10px);
+    }
+    25%{
+        transform: translateX(10px) translateY(0);
+    }
+
+    50%{
+        transform: translateX(15px) translateY(10px);
+    }
+
+    75%{
+        transform: translateX(5px) translateY(0);
+    }
+
+    100%{
+        transform: translateX(10px) translateY(10px);
+    }
+
 }
 
 

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import {useTypewriter, Cursor} from 'react-simple-typewriter'
 import Heading from './components/Heading';
 import { AuthProvider } from './context/UseContext';
@@ -10,8 +10,12 @@ import Skills from './components/Skills';
 import Footer from './components/Footer';
 import Projects from './components/Projects';
 import Education from './components/Education';
+import PreLoader from './components/PreLoader';
 
 function App() {
+
+  const[isLoading, setIsLoading] = useState(true);
+
   let slides = [
     {
       id: 0,
@@ -33,17 +37,31 @@ function App() {
     }
   ]
 
+  useEffect(()=>{
+    const fakeDataFetch = () =>{
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 3000);
+    }
+
+    fakeDataFetch()
+  },[])
+
   return (
     <>
       <AuthProvider>
-        <Heading />
-        <AboutMe />
-        <Skills />
-        <Education />
-        <section className='bg-slate-500'>
-          <Projects slides={slides} />
-        </section>
-        <Footer />
+        {isLoading ? <PreLoader /> : 
+        <>
+          <Heading />
+          <AboutMe />
+          <Skills />
+          <Education />
+          <section className='bg-slate-500'>
+            <Projects slides={slides} />
+          </section>
+          <Footer />
+        </>
+        }
       </AuthProvider>
       {/* <Padre>
         <Hijo>
