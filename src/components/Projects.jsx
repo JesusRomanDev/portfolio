@@ -66,12 +66,12 @@ const Projects = ({slides}) => {
             alt: "SQL"
         }
     ]
-    
-    let detallesarr=[[{titulo: "Todo List", descripcion: "Descripcion"}],[{titulo: "Credit Card", descripcion: "Descripcion"}],[{titulo: "Tercero",descripcion: "Descripcion"}]]
+
+    let detallesArr=[[{titulo: "Todo List", descripcion: "Descripcion"}],[{titulo: "Credit Card", descripcion: "Descripcion"}],[{titulo: "Tercero",descripcion: "Descripcion"}]]
 
     let [current, setCurrent] = useState(0);
     let [project, setProject] = useState(lang);
-    let [details, setDetails] = useState(detallesarr);
+    let [details, setDetails] = useState(detallesArr);
 
 
     let previousSlide = () => {
@@ -102,11 +102,11 @@ const Projects = ({slides}) => {
 
     useEffect(()=>{
         if(current === 0){
-            return setDetails(detallesarr[0])
+            return setDetails(detallesArr[0])
         }if (current === 1) {
-            return setDetails(detallesarr[1])
+            return setDetails(detallesArr[1])
         } if(current === 2) {
-            return setDetails(detallesarr[2])
+            return setDetails(detallesArr[2])
         }
     }, [current])
     
