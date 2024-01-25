@@ -8,19 +8,19 @@ const Projects = ({slides}) => {
         {
             id:0,
             proyecto: 0,
-            tech: "../../images/HTML5_badge.png",
+            tech: "img/HTML5_badge.png",
             alt: "HTML"
         },
         {   
             id:1,
             proyecto: 0,
-            tech: "../../images/css.png",
+            tech: "img/css.png",
             alt: "CSS"
         },
         {   
             id:2,
             proyecto: 0,
-            tech: "../../images/js.png",
+            tech: "img/js.png",
             alt: "JavaScript"
         }
     ]
@@ -29,19 +29,19 @@ const Projects = ({slides}) => {
         {
             id:3,
             proyecto: 1,
-            tech: "../../images/HTML5_badge.png",
+            tech: "img/HTML5_badge.png",
             alt: "HTML"
         },
         {   
             id:4,
             proyecto: 1,
-            tech: "../../images/css.png",
+            tech: "img/css.png",
             alt: "CSS"
         },
         {   
             id:5,
             proyecto: 1,
-            tech: "../../images/node.png",
+            tech: "img/node.png",
             alt: "JavaScript"
         }
     ]
@@ -50,19 +50,19 @@ const Projects = ({slides}) => {
         {
             id:6,
             proyecto: 1,
-            tech: "../../images/HTML5_badge.png",
+            tech: "img/HTML5_badge.png",
             alt: "HTML"
         },
         {   
             id:7,
             proyecto: 1,
-            tech: "../../images/css.png",
+            tech: "img/css.png",
             alt: "CSS"
         },
         {   
             id:8,
             proyecto: 1,
-            tech: "../../images/sql.png",
+            tech: "img/sql.png",
             alt: "SQL"
         }
     ]

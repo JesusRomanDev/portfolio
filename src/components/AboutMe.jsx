@@ -22,7 +22,7 @@ const AboutMe = () => {
                 <p className='text-sm sm:text-base font-semibold'>Previously i had experience as a Product Engineer working with International Companies, but after some time i realized that i wanted to go after what i enjoy the most, to <span className='text-red-500'> &lt; code &gt; </span> .</p>
             </div>
             <div className='sm:w-1/4 flex flex-col justify-start sm:justify-center items-center'>
-                <img className='w-3/4 sm:w-full sliderUp' src="../../images/dev.png" alt="" />
+                <img className='w-3/4 sm:w-full sliderUp' src="img/dev.png" alt="dev" />
                 <div>
                     <button className='hover:bg-slate-400 hover:scale-110 hover:duration-300 ease-out duration-300 text-xl text-white font-semibold p-2 bg-slate-600 rounded-md'>Download CV</button>       
                 </div>

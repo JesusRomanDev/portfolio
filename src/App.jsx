@@ -14,24 +14,24 @@ import PreLoader from './components/PreLoader';
 
 function App() {
 
-  const[isLoading, setIsLoading] = useState(true);
+  const[isLoading, setIsLoading] = useState(false);
 
   let slides = [
     {
       id: 0,
-      image: "../images/todoList.png",
+      image: "img/todoList.PNG",
       alt: "project1",
       title: "Todo List"
     },
     {
       id:1,
-      image: "../images/creditCard.png",
+      image: "img/creditCard.PNG",
       alt: "project2",
       title: "Credit Card"
     },
     {
       id:2,
-      image: "../images/git.png",
+      image: "img/git.png",
       alt: "project3",
       title: "Ejemplo"
     }
