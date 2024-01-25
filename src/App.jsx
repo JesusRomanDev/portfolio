@@ -14,7 +14,7 @@ import PreLoader from './components/PreLoader';
 
 function App() {
 
-  const[isLoading, setIsLoading] = useState(false);
+  const[isLoading, setIsLoading] = useState(true);
 
   let slides = [
     {
