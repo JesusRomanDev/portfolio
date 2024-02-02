@@ -13,6 +13,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import PreLoader from './components/PreLoader';
+import { animateScroll } from 'react-scroll';
 
 function App() {
 
@@ -38,6 +39,11 @@ function App() {
       title: "Ejemplo"
     }
   ]
+  const options = {
+    // Your options here, for example:
+    duration: 500,
+    smooth: true,
+  };
 
   useEffect(()=>{
     const fakeDataFetch = () =>{
@@ -47,6 +53,7 @@ function App() {
     }
 
     fakeDataFetch()
+    animateScroll.scrollMore(-100, options)
   },[])
 
   return (
