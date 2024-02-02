@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import {useTypewriter, Cursor} from 'react-simple-typewriter'
+import {Fade} from 'react-awesome-reveal';
 import Heading from './components/Heading';
 import { AuthProvider } from './context/UseContext';
 import Padre from './components/Padre';
@@ -7,9 +8,10 @@ import Hijo from './components/Hijo';
 import Nieto from './components/Nieto';
 import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
-import Footer from './components/Footer';
-import Projects from './components/Projects';
 import Education from './components/Education';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 import PreLoader from './components/PreLoader';
 
 function App() {
@@ -53,12 +55,17 @@ function App() {
         {isLoading ? <PreLoader /> : 
         <>
           <Heading />
-          <AboutMe />
-          <Skills />
-          <Education />
-          <section className='bg-slate-500'>
-            <Projects slides={slides} />
-          </section>
+          <Fade>
+            <AboutMe />
+            <Skills />
+          </Fade>
+          <Fade triggerOnce delay={100} direction='left'>
+            <Education />
+            <section className='bg-slate-500'>
+              <Projects slides={slides} />
+            </section>
+          </Fade>
+          <Contact />
           <Footer />
         </>
         }
