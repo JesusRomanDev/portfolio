@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Footer = () => {
+    const fecha = new Date().getFullYear();
   return (
     <>
         <footer className=' p-4 h-10% w-full left-0 flex justify-evenly bottom-0'>
@@ -31,7 +32,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='flex justify-center font-bold text-white'>
-                    <p>2024 Eduardo. All rights reserved.</p>
+                    <p>{fecha} Eduardo. All rights reserved.</p>
                 </div>
             </div>
 
