@@ -10,7 +10,6 @@ import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
 import Education from './components/Education';
 import Projects from './components/Projects';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
 import PreLoader from './components/PreLoader';
 import { animateScroll } from 'react-scroll';
@@ -22,19 +21,19 @@ function App() {
   let slides = [
     {
       id: 0,
-      image: "img/todoList.PNG",
+      image: "img/bienesRaices.PNG",
       alt: "project1",
-      title: "Todo List"
+      title: "Bienes Raices CRUD"
     },
     {
       id:1,
-      image: "img/creditCard.PNG",
+      image: "img/pacientes.PNG",
       alt: "project2",
       title: "Credit Card"
     },
     {
       id:2,
-      image: "img/git.png",
+      image: "img/miraiAnime.PNG",
       alt: "project3",
       title: "Ejemplo"
     }
@@ -72,7 +71,6 @@ function App() {
               <Projects slides={slides} />
             </section>
           </Fade>
-          <Contact />
           <Footer />
         </>
         }
