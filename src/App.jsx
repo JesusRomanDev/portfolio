@@ -36,6 +36,12 @@ function App() {
       image: "img/miraiAnime.PNG",
       alt: "project3",
       title: "Ejemplo"
+    },
+    {
+      id:3,
+      image: "img/agenciaViajes.PNG",
+      alt: "project4",
+      title: "Agencia de Viajes"
     }
   ]
   const options = {
