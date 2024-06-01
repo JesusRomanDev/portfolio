@@ -20,28 +20,28 @@ function App() {
 
   let slides = [
     {
-      id: 0,
+      id:0,
+      image: "img/agenciaViajes.PNG",
+      alt: "project1",
+      title: "Agencia de Viajes"
+    },
+    {
+      id: 1,
       image: "img/bienesRaices.PNG",
       alt: "project1",
       title: "Bienes Raices CRUD"
     },
     {
-      id:1,
+      id:2,
       image: "img/pacientes.PNG",
       alt: "project2",
       title: "Credit Card"
     },
     {
-      id:2,
+      id:3,
       image: "img/miraiAnime.PNG",
       alt: "project3",
       title: "Ejemplo"
-    },
-    {
-      id:3,
-      image: "img/agenciaViajes.PNG",
-      alt: "project4",
-      title: "Agencia de Viajes"
     }
   ]
   const options = {

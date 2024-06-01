@@ -4,7 +4,7 @@ import { FaArrowCircleLeft } from "react-icons/fa";
 
 
 const Projects = ({slides}) => {
-    let lang = [
+    let lang2 = [
         {
             id:0,
             proyecto: 0,
@@ -37,7 +37,7 @@ const Projects = ({slides}) => {
         }
     ]
 
-    let lang2 = [
+    let lang3 = [
         {
             id:5,
             proyecto: 1,
@@ -76,7 +76,7 @@ const Projects = ({slides}) => {
         }
     ]
 
-    let lang3 = [
+    let lang4 = [
         {
             id:11,
             proyecto: 2,
@@ -97,7 +97,7 @@ const Projects = ({slides}) => {
         }
     ]
 
-    let lang4 = [
+    let lang = [
         {
             id:12,
             proyecto: 3,
@@ -115,7 +115,14 @@ const Projects = ({slides}) => {
             proyecto: 3,
             tech: "img/js.png",
             alt: "JavaScript"
-        },        {   
+        },
+        {
+            id:18,
+            proyecto: 3,
+            tech: "img/bstrap.svg",
+            alt: "Bootstrap"
+        },
+        {   
             id:15,
             proyecto: 3,
             tech: "img/node.png",
@@ -135,7 +142,7 @@ const Projects = ({slides}) => {
         }
     ]
 
-    let detallesArr=[[{titulo: "Real State w/ MVC", descripcion: "This project was made with technologies in the Frontend and Backend with a result of a FullStack project, Model View Controller arquitecture pattern was used, allowing sellers put any property in sale. CRUD is available with properties and sellers. Relational Database and Authentication are part of it aswell.", id:10}],[{titulo: "Administrador de Pacientes", descripcion: "This project was made with technologies in the frontend and backend with a result of a FullStack project. CRUD is available in this project, the doctor can create, read, update and delete any patients in the dashboard. HTML, CSS, JS and React are part of the Frontend and with the Backend NodeJS & Express for the Server side, as for the No Relational Database i used MongoDB. ", id:20}],[{titulo: "Mirai Anime Page",descripcion: "First project by my own, only with Frontend technologies. Working with HTML, CSS and JavaScript to make the page with some basic functions and learn the properties of CSS. With this project i was hooked up by coding and realize this i what i wanted to do for the rest of my life. Thanks for reading until here :)", id:30}], [{titulo: "Agencia de Viajes", descripcion: "Project made as a Fullstack, using the MVC arquitecture pattern, technologies for the frontend such as HTML, CSS, JS, for the backend i used NodeJS w Express and Sequelize for the ORM, MySQL for the database, additionally it was needed a template engine and one available for express was Pug.The customer can search for travels around the world and verifying the site is secure with Testimonials of clients."}]]
+    let detallesArr=[[{titulo: "Agencia de Viajes", descripcion: "Project made as a Fullstack, using the MVC arquitecture pattern, technologies for the frontend such as HTML, CSS, JS, for the backend i used NodeJS w Express and Sequelize for the ORM, MySQL for the database, additionally it was needed a template engine and one available for express was Pug.The customer can search for travels around the world and verifying the site is secure with Testimonials of clients."}],[{titulo: "Real State w/ MVC", descripcion: "This project was made with technologies in the Frontend and Backend with a result of a FullStack project, Model View Controller arquitecture pattern was used, allowing sellers put any property in sale. CRUD is available with properties and sellers. Relational Database and Authentication are part of it aswell.", id:10}],[{titulo: "Administrador de Pacientes", descripcion: "This project was made with technologies in the frontend and backend with a result of a FullStack project. CRUD is available in this project, the doctor can create, read, update and delete any patients in the dashboard. HTML, CSS, JS and React are part of the Frontend and with the Backend NodeJS & Express for the Server side, as for the No Relational Database i used MongoDB. ", id:20}],[{titulo: "Mirai Anime Page",descripcion: "First project by my own, only with Frontend technologies. Working with HTML, CSS and JavaScript to make the page with some basic functions and learn the properties of CSS. With this project i was hooked up by coding and realize this i what i wanted to do for the rest of my life. Thanks for reading until here :)", id:30}], ]
 
     let [current, setCurrent] = useState(0);
     let [project, setProject] = useState(lang);
