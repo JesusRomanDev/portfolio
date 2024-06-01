@@ -191,7 +191,7 @@ const Projects = ({slides}) => {
     
   return (
     <>
-        <section id='projects' className='w-[30%] m-auto pb-8'>
+        <section id='projects' className='w-[90%] sm:w-[30%] m-auto pb-8'>
             <h3 className='pt-10 flex justify-center text-white font-bold text-3xl'>Some Projects</h3>
             <div className="w-full overflow-hidden relative hover:scale-110 hover:duration-300 ease-out duration-300">
                 <div style={{transform:`translateX(-${current * 100}%)`}} className={`relative mt-4 flex transition ease-in-out duration-500`}>
@@ -222,7 +222,7 @@ const Projects = ({slides}) => {
                 </div> */}
             </div>
             
-            <div className='bottom-12 mt-5 left-0 flex flex-col w-full border-2 rounded p-2'>
+            <div className='bottom-12 mt-5 left-0 flex flex-col sm:w-full border-2 rounded p-2'>
                     {details.map(m=> {
                         return (
                         <div key={m.id}>
@@ -230,9 +230,9 @@ const Projects = ({slides}) => {
                             <p className='my-5 text-white'>{m.descripcion}</p>
                         </div>) 
                     })}
-                    <div className='flex justify-center items-center gap-2'>
+                    <div className='flex flex-wrap justify-center items-center gap-2'>
                     {project.map(t =>{
-                        return <div className='flex items-center' key={t.id}><img className={`max-w-20 hover:scale-110 z-30`} alt={t.alt} key={t.id} src={t.tech} /></div>
+                        return <div className='flex items-center' key={t.id}><img className={`max-w-10 md:max-w-12 hover:scale-110 z-30`} alt={t.alt} key={t.id} src={t.tech} /></div>
                     })}
                     </div>
                 </div>
