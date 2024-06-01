@@ -22,9 +22,10 @@ const Footer = () => {
                         <p>Front End Developer</p>
                     </div>
                     <div className='max-w-full flex-col gap-5 font-bold text-white'>
+
                         <div className="flex justify-center">
                             <h2>Contact Me</h2>
-                            {copiado && <Alerta />}
+                    {copiado && <Alerta />}
                         </div>
                         <div className='flex flex-col md:flex-row items-center justify-center gap-5 mt-5'>
                             <a aria-label='GitHub' target='_blank' href="https://github.com/JesusRomanDev"><svg xmlns="http://www.w3.org/2000/svg" className="hover:scale-125 hover:duration-300 ease-out duration-300 icon icon-tabler icon-tabler-brand-github" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ece0e0" fill="none" strokeLinecap="round" strokeLinejoin="round">
