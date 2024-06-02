@@ -48,6 +48,26 @@
     .loader{
         @apply w-full h-screen z-10 fixed top-0 left-0 bg-black flex justify-center items-center
     }
+
+    .buttonVerMas{
+        @apply inline-block h-12 w-12 mx-1 rounded-full cursor-pointer bg-slate-50 transition-all ease-in-out duration-300 overflow-hidden
+    }
+
+    .buttonVerMas:hover{
+        @apply w-48
+    }
+
+    .buttonVerMas:hover .icono svg{
+        @apply mt-0
+    }
+
+    .icono{
+        @apply inline-block h-14 w-14
+    }
+
+    .spanGithub{
+        @apply z-40
+    }
 }
 
 @keyframes sliderUp {
