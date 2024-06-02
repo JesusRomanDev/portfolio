@@ -57,16 +57,12 @@
         @apply w-48
     }
 
-    .buttonVerMas:hover .icono svg{
-        @apply mt-0
-    }
-
     .icono{
         @apply inline-block h-14 w-14
     }
 
     .spanGithub{
-        @apply z-40
+        @apply z-40 inline-block align-middle mt-3 font-bold
     }
 }
 
