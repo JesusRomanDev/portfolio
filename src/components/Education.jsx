@@ -1,9 +1,7 @@
-import React from 'react'
-
 const Education = () => {
   return (
     <>
-        <section id='education'>
+        <section id='education' className="pb-14">
             <div className='mt-5 mb-5 flex flex-col items-center sm:items-stretch sm:flex-row justify-center gap-x-5'>
               <div className='max-w-md w-3/4 sm:w-1/2 text-white border-r-4 border-r-slate-800 flex flex-col sm:items-end'>
                 <h3 className='text-2xl font-bold self-center'>Education</h3>

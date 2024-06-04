@@ -26,19 +26,25 @@ function App() {
       title: "Agencia de Viajes"
     },
     {
-      id: 1,
+      id:1,
+      image: "img/csv.PNG",
+      alt: "csv",
+      title: "csv"
+    },
+    {
+      id: 2,
       image: "img/bienesRaices.PNG",
       alt: "project1",
       title: "Bienes Raices CRUD"
     },
     {
-      id:2,
+      id:3,
       image: "img/pacientes.PNG",
       alt: "project2",
       title: "Credit Card"
     },
     {
-      id:3,
+      id:4,
       image: "img/miraiAnime.PNG",
       alt: "project3",
       title: "Ejemplo"
@@ -71,9 +77,9 @@ function App() {
             <AboutMe />
             <Skills />
           </Fade>
-          <Fade triggerOnce delay={100} direction='left'>
+          <Fade triggerOnce fraction={0} delay={100} direction='left'>
             <Education />
-            <section className='bg-slate-500'>
+            <section className='py-5 bg-slate-500'>
               <Projects slides={slides} />
             </section>
           </Fade>

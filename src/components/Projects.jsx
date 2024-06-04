@@ -4,7 +4,7 @@ import { FaArrowCircleLeft } from "react-icons/fa";
 
 
 const Projects = ({slides}) => {
-    let lang2 = [
+    let lang = [
         {
             id:0,
             proyecto: 0,
@@ -23,131 +23,190 @@ const Projects = ({slides}) => {
             tech: "img/js.png",
             alt: "JavaScript"
         },
-        {   
+        {
             id:3,
             proyecto: 0,
-            tech: "img/php.png",
-            alt: "PHP"
+            tech: "img/bstrap.svg",
+            alt: "Bootstrap"
         },
         {   
             id:4,
+            proyecto: 0,
+            tech: "img/node.png",
+            alt: "NodeJS"
+        },
+        {
+            id: 4.1,
+            proyecto: 0,
+            tech: "img/expressjs.svg",
+            alt: "Express"
+        },
+        {   
+            id:5,
+            proyecto: 0,
+            tech: "img/sequelize.png",
+            alt: "Sequelize"
+        },
+        {   
+            id:6,
             proyecto: 0,
             tech: "img/mysql.png",
             alt: "mysql"
         }
     ]
 
-    let lang3 = [
+    let lang2= [
         {
-            id:5,
+            id: 7,
             proyecto: 1,
             tech: "img/HTML5_badge.png",
-            alt: "HTML"
-        },
-        {   
-            id:6,
+            alt: "html5"
+        },        {   
+            id:8,
             proyecto: 1,
             tech: "img/css.png",
             alt: "CSS"
         },
         {   
-            id:7,
+            id:9,
             proyecto: 1,
-            tech: "img/js.png",
-            alt: "JavaScript"
+            tech: "img/twind.svg",
+            alt: "twind"
         },
         {   
-            id:8,
+            id:10,
+            proyecto: 1,
+            tech: "img/typescript.svg",
+            alt: "tscript"
+        },
+        {   
+            id:11,
             proyecto: 1,
             tech: "img/react.png",
             alt: "React"
         },
         {   
-            id:9,
-            proyecto: 1,
-            tech: "img/node.png",
-            alt: "Node"
-        },
-        {   
-            id:10,
-            proyecto: 1,
-            tech: "img/mongo.webp",
-            alt: "MongoDB"
-        }
-    ]
-
-    let lang4 = [
-        {
-            id:11,
-            proyecto: 2,
-            tech: "img/HTML5_badge.png",
-            alt: "HTML"
-        },
-        {   
             id:12,
-            proyecto: 2,
-            tech: "img/css.png",
-            alt: "CSS"
-        },
-        {   
-            id:13,
-            proyecto: 2,
-            tech: "img/js.png",
-            alt: "JavaScript"
-        }
-    ]
-
-    let lang = [
-        {
-            id:12,
-            proyecto: 3,
-            tech: "img/HTML5_badge.png",
-            alt: "HTML"
-        },
-        {   
-            id:13,
-            proyecto: 3,
-            tech: "img/css.png",
-            alt: "CSS"
-        },
-        {   
-            id:14,
-            proyecto: 3,
-            tech: "img/js.png",
-            alt: "JavaScript"
-        },
-        {
-            id:18,
-            proyecto: 3,
-            tech: "img/bstrap.svg",
-            alt: "Bootstrap"
-        },
-        {   
-            id:15,
-            proyecto: 3,
+            proyecto: 1,
             tech: "img/node.png",
             alt: "NodeJS"
         },
         {   
+            id:12.1,
+            proyecto: 1,
+            tech: "img/expressjs.svg",
+            alt: "Express"
+        },
+
+    ]
+
+    let lang3 = [
+        {
+            id:13,
+            proyecto: 2,
+            tech: "img/HTML5_badge.png",
+            alt: "HTML"
+        },
+        {   
+            id:14,
+            proyecto: 2,
+            tech: "img/css.png",
+            alt: "CSS"
+        },
+        {   
+            id:15,
+            proyecto: 2,
+            tech: "img/js.png",
+            alt: "JavaScript"
+        },
+        {   
             id:16,
-            proyecto: 3,
-            tech: "img/sequelize.png",
-            alt: "Sequelize"
+            proyecto: 2,
+            tech: "img/php.png",
+            alt: "PHP"
         },
         {   
             id:17,
-            proyecto: 3,
+            proyecto: 2,
             tech: "img/mysql.png",
             alt: "mysql"
         }
     ]
 
-    let repoLink1 = [{sitio: 'https://github.com/JesusRomanDev/Agencia-de-Viajes-Node-MVC', id:1}]
-    let repoLink2 = [{sitio: 'https://github.com/JesusRomanDev/Bienes-Raices-MVC-PHP', id:2}]
-    let repoLink3 = [{sitio: 'https://github.com/JesusRomanDev/apv-frontend', id:3}]
-    let repoLink4 = [{sitio: 'https://github.com/JesusRomanDev/Anime-Watchlist', id:4}]
+    let lang4 = [
+        {
+            id:18,
+            proyecto: 3,
+            tech: "img/HTML5_badge.png",
+            alt: "HTML"
+        },
+        {   
+            id:19,
+            proyecto: 3,
+            tech: "img/css.png",
+            alt: "CSS"
+        },
+        {   
+            id:20,
+            proyecto: 3,
+            tech: "img/js.png",
+            alt: "JavaScript"
+        },
+        {   
+            id:21,
+            proyecto: 3,
+            tech: "img/react.png",
+            alt: "React"
+        },
+        {   
+            id:22,
+            proyecto: 3,
+            tech: "img/node.png",
+            alt: "Node"
+        },
+        {
+            id:22.1,
+            proyecto: 4,
+            tech: "img/expressjs.svg",
+            alt: "Express"
+        },
+        {   
+            id:23,
+            proyecto: 3,
+            tech: "img/mongo.webp",
+            alt: "MongoDB"
+        }
+    ]
 
-    let detallesArr=[[{titulo: "Agencia de Viajes", descripcion: "Project made as a Fullstack, using the MVC arquitecture pattern, technologies for the frontend such as HTML, CSS, JS, for the backend i used NodeJS w Express and Sequelize for the ORM, MySQL for the database, additionally it was needed a template engine and one available for express was Pug.The customer can search for travels around the world and verifying the site is secure with Testimonials of clients."}],[{titulo: "Real State w/ MVC", descripcion: "This project was made with technologies in the Frontend and Backend with a result of a FullStack project, Model View Controller arquitecture pattern was used, allowing sellers put any property in sale. CRUD is available with properties and sellers. Relational Database and Authentication are part of it aswell.", id:10}],[{titulo: "Administrador de Pacientes", descripcion: "This project was made with technologies in the frontend and backend with a result of a FullStack project. CRUD is available in this project, the doctor can create, read, update and delete any patients in the dashboard. HTML, CSS, JS and React are part of the Frontend and with the Backend NodeJS & Express for the Server side, as for the No Relational Database i used MongoDB. ", id:20}],[{titulo: "Mirai Anime Page",descripcion: "First project by my own, only with Frontend technologies. Working with HTML, CSS and JavaScript to make the page with some basic functions and learn the properties of CSS. With this project i was hooked up by coding and realize this i what i wanted to do for the rest of my life. Thanks for reading until here :)", id:30}], ]
+    let lang5 = [
+        {
+            id:24,
+            proyecto: 4,
+            tech: "img/HTML5_badge.png",
+            alt: "HTML"
+        },
+        {   
+            id:25,
+            proyecto: 4,
+            tech: "img/css.png",
+            alt: "CSS"
+        },
+        {   
+            id:26,
+            proyecto: 4,
+            tech: "img/js.png",
+            alt: "JavaScript"
+        }
+    ]
+
+
+    let repoLink1 = [{sitio: 'https://github.com/JesusRomanDev/Agencia-de-Viajes-Node-MVC', id:1}]
+    let repoLink2 = [{sitio: 'https://github.com/JesusRomanDev/Fullstack-RestAPI-CSV-Viewer-file-w-TypeScipt?tab=readme-ov-file', id:2}]
+    let repoLink3 = [{sitio: 'https://github.com/JesusRomanDev/Bienes-Raices-MVC-PHP', id:3}]
+    let repoLink4 = [{sitio: 'https://github.com/JesusRomanDev/apv-frontend', id:4}]
+    let repoLink5 = [{sitio: 'https://github.com/JesusRomanDev/Anime-Watchlist', id:5}]
+
+    let detallesArr=[[{titulo: "Agencia de Viajes", descripcion: "Project made as a Fullstack, using the MVC arquitecture pattern, technologies for the frontend such as HTML, CSS, JS, for the backend i used NodeJS w Express and Sequelize for the ORM, MySQL for the database, additionally it was needed a template engine and one available for express was Pug.The customer can search for travels around the world and verifying the site is secure with Testimonials of clients."}],[{titulo: "CSV Viewer + Search RESTful API", descripcion: "Web Application that allow users to upload CSV file with pre formated data will be able to show those data as cards in the frontend, additionally able to filter in a search bar. This leads to a full stack project where the best practices in the RESTful API were showed. Monorepository with npm workspaces to archieve an easy deploy for both parts, client and server. Handling error gracefully, simple, easy and a friendly interface to the users is the main part of this project."}],[{titulo: "Real State w/ MVC", descripcion: "This project was made with technologies in the Frontend and Backend with a result of a FullStack project, Model View Controller arquitecture pattern was used, allowing sellers put any property in sale. CRUD is available with properties and sellers. Relational Database and Authentication are part of it aswell.", id:10}],[{titulo: "Administrador de Pacientes", descripcion: "This project was made with technologies in the frontend and backend with a result of a FullStack project. CRUD is available in this project, the doctor can create, read, update and delete any patients in the dashboard. HTML, CSS, JS and React are part of the Frontend and with the Backend NodeJS & Express for the Server side, as for the No Relational Database i used MongoDB. ", id:20}],[{titulo: "Mirai Anime Page",descripcion: "First project by my own, only with Frontend technologies. Working with HTML, CSS and JavaScript to make the page with some basic functions and learn the properties of CSS. With this project i was hooked up by coding and realize this i what i wanted to do for the rest of my life. Thanks for reading until here :)", id:30}], ]
 
     let [current, setCurrent] = useState(0);
     let [project, setProject] = useState(lang);
@@ -180,6 +239,8 @@ const Projects = ({slides}) => {
             return setProject(lang3)
         } if(current === 3){
             return setProject(lang4)
+        }if(current ===4){
+            return setProject(lang5)
         }
     }, [current])
 
@@ -192,6 +253,8 @@ const Projects = ({slides}) => {
             return setRepo(repoLink3)
         } if(current === 3){
             return setRepo(repoLink4)
+        }if(current ===4){
+            return setRepo(repoLink5)
         }
     }, [current])
 
@@ -204,13 +267,15 @@ const Projects = ({slides}) => {
             return setDetails(detallesArr[2])
         } if(current === 3){
             return setDetails(detallesArr[3])
+        }if(current ===4){
+            return setDetails(detallesArr[4])
         }
     }, [current])
     
   return (
     <>
-        <section id='projects' className='w-[90%] sm:w-[30%] m-auto pb-8'>
-            <h3 className='pt-10 flex justify-center text-white font-bold text-3xl'>Some Projects</h3>
+        <section id='projects' className='w-[90%] sm:w-[30%] m-auto pt-8 pb-8'>
+            <h3 className=' flex justify-center text-white font-bold text-3xl'>Some Projects</h3>
             <div className="w-full overflow-hidden relative hover:scale-110 hover:duration-300 ease-out duration-300">
                 <div style={{transform:`translateX(-${current * 100}%)`}} className={`relative mt-4 flex transition ease-in-out duration-500`}>
                     {slides.map(s=>{
@@ -233,7 +298,7 @@ const Projects = ({slides}) => {
                             </div>
                 )})}
 
-                <div className='absolute top-0 h-full w-full flex justify-between items-center text-white px-10 text-3xl'>
+                <div className='absolute top-0 h-full w-full flex justify-between items-center text-zinc-300 px-10 text-3xl'>
                     <button aria-label='previous slide' className='z-40 hover:scale-125 hover:duration-300 ease-out duration-300' onClick={previousSlide}>
                         <FaArrowCircleLeft />
                     </button>
