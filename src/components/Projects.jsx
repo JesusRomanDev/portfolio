@@ -202,7 +202,7 @@ const Projects = ({slides}) => {
 
     let repoLink1 = [{sitio: 'https://github.com/JesusRomanDev/Agencia-de-Viajes-Node-MVC', id:1}]
     let repoLink2 = [{sitio: 'https://github.com/JesusRomanDev/Fullstack-RestAPI-CSV-Viewer-file-w-TypeScipt?tab=readme-ov-file', id:2}]
-    let repoLink3 = [{sitio: 'https://github.com/JesusRomanDev/Bienes-Raices-MVC-PHP', id:3}]
+    let repoLink3 = [{sitio: 'https://github.com/JesusRomanDev/Bienes-Raices-MVC-OOP-FullStack', id:3}]
     let repoLink4 = [{sitio: 'https://github.com/JesusRomanDev/apv-frontend', id:4}]
     let repoLink5 = [{sitio: 'https://github.com/JesusRomanDev/Anime-Watchlist', id:5}]
 
