@@ -8,7 +8,7 @@ const AboutMe = () => {
     });
     const saveFile = () => {
       FileSaver.saveAs(
-      import.meta.env.PUBLIC_URL + "./../../public/EduardoRomanCVEnglish.pdf",
+      import.meta.env.PUBLIC_URL + "./../../public/img/EduardoRomanCVEnglish.pdf",
       "EduardoRomanCVEnglish.pdf");
     }
   return (
