@@ -1,5 +1,4 @@
 import {useTypewriter, Cursor} from 'react-simple-typewriter'
-import FileSaver from 'file-saver';
 import CV from '../../public/assets/EduardoRomanCVEnglish.pdf'
 const AboutMe = () => {
     const [text] = useTypewriter({
@@ -7,11 +6,6 @@ const AboutMe = () => {
       loop: {},
       deleteSpeed: 80
     });
-    const saveFile = () => {
-      FileSaver.saveAs(
-      import.meta.env.PUBLIC_URL + "dist/assets/EduardoRomanCVEnglish.pdf",
-      "EduardoRomanCVEnglish.pdf");
-    }
   return (
     <>
         <section id='about' className='mt-24 sm:mt-16 w-3/4 sm:w-4/5 pt-24 sm:py-24 mx-auto grid auto-rows-auto mb-5 sm:mb-0 sm:flex sm:gap-5 justify-center'>
@@ -28,7 +22,7 @@ const AboutMe = () => {
             <div className='sm:w-1/4 flex flex-col justify-start sm:justify-center items-center'>
                 <img className='w-3/4 sm:w-full sliderUp' src="img/dev.png" alt="dev" />
                 <div>
-                    <a href={CV} download='cv'>
+                    <a href={CV} download='EduardoRomanCVEnglish'>
                     <button className='hover:bg-slate-400 hover:scale-110 hover:duration-300 ease-out duration-300 text-xl text-white font-semibold p-2 bg-slate-600 rounded-md'>Download CV</button>
                     </a>       
                 </div>
