@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import {useTypewriter, Cursor} from 'react-simple-typewriter'
-import cv from '../assets/cv.pdf';
+import CV from '../assets/EduardoRomanCVEnglish.pdf';
 
 const AboutMe = () => {
     const [text] = useTypewriter({
@@ -24,7 +24,7 @@ const AboutMe = () => {
             <div className='sm:w-1/4 flex flex-col justify-start sm:justify-center items-center'>
                 <img className='w-3/4 sm:w-full sliderUp' src="img/dev.png" alt="dev" />
                 <div>
-                    <a href={cv} download='cv'>
+                    <a href={CV} download='CV'>
                     <button className='hover:bg-slate-400 hover:scale-110 hover:duration-300 ease-out duration-300 text-xl text-white font-semibold p-2 bg-slate-600 rounded-md'>Download CV</button>
                     </a>       
                 </div>
