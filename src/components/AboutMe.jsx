@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import {useTypewriter, Cursor} from 'react-simple-typewriter'
+import cv from '../assets/cv.pdf';
 
 const AboutMe = () => {
-    const [count, setCount] = useState(0)
     const [text] = useTypewriter({
       words : ['Front End Developer', 'Mechatronics Engineer', "Lifelong Learner"],
       loop: {},
@@ -14,7 +14,7 @@ const AboutMe = () => {
             <div className='sm:w-1/2 flex flex-col justify-center text-white'>
                 <h1 className='text-left block text-2xl sm:text-4xl'>Hi, my name is <span className='font-bold text-red-800'>Jesus Eduardo</span></h1>
                 <h2 className='text-sm sm:text-base font-black mt-5'>
-                    I'm a<span className='text-red-700'> {text}</span><Cursor cursorColor='red' />
+                    <span className='text-red-700'> {text}</span><Cursor cursorColor='red' />
                 </h2>
                 <p className='mt-5 font-semibold'>Based in <span className='text-red-500'>Monterrey Nuevo Leon, Mexico.</span> </p>
                 <p className='text-sm sm:text-base font-semibold mt-5'>Graduated in Universidad Autonoma de Nuevo Leon as a <span className='text-red-500'>Mechatronics Engineer</span>, i'm a passionate person about the tech industry and everything that involves it, open to challenges, currently looking for my first job as a developer.</p>
@@ -24,7 +24,7 @@ const AboutMe = () => {
             <div className='sm:w-1/4 flex flex-col justify-start sm:justify-center items-center'>
                 <img className='w-3/4 sm:w-full sliderUp' src="img/dev.png" alt="dev" />
                 <div>
-                    <a target='_blank' href='https://drive.google.com/file/d/11u4PBFKk3tgirXVw5IxX4EH50QTVRdvy/view?usp=sharing'>
+                    <a href={cv} download='cv'>
                     <button className='hover:bg-slate-400 hover:scale-110 hover:duration-300 ease-out duration-300 text-xl text-white font-semibold p-2 bg-slate-600 rounded-md'>Download CV</button>
                     </a>       
                 </div>

@@ -274,7 +274,7 @@ const Projects = ({slides}) => {
     
   return (
     <>
-        <section id='projects' className='w-[90%] sm:w-[30%] m-auto pt-8 pb-8'>
+        <section id='projects' className='w-[90%] sm:w-[30%] m-auto pt-8 pb-8 h-screen'>
             <h3 className=' flex justify-center text-white font-bold text-3xl'>Some Projects</h3>
             <div className="w-full overflow-hidden relative hover:scale-110 hover:duration-300 ease-out duration-300">
                 <div style={{transform:`translateX(-${current * 100}%)`}} className={`relative mt-4 flex transition ease-in-out duration-500`}>
@@ -325,7 +325,7 @@ const Projects = ({slides}) => {
                     {details.map(m=> {
                         return (
                         <div key={m.id}>
-                            <p className=' text-red-400 font-bold'>{m.titulo}</p>
+                            <p className=' text-red-500 font-bold'>{m.titulo}</p>
                             <p className='my-5 text-white'>{m.descripcion}</p>
                         </div>) 
                     })}
