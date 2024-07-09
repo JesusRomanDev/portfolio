@@ -41,7 +41,8 @@ const Education = () => {
                   <p className='text-red-500 text-xl font-bold'>Navistar International</p> 
                   <h4 className='text-red-500 text-sm font-bold'>Engineer Intern</h4>
                   <p className='text-red-500 text-sm'>September 2019-March 2020</p>
-                  <p className=''>Algormitms & code standards for units in each trim version of the trucks.</p>
+                  <p className=''>Algormitms & code standards for units in each trim version of the trucks, MySQL CRUD operations, Frontend design and update of assembly drawings in web layout, Landing page fixes, Code reviews through pull requests.
+                  </p>
                   <div className='absolute h-0.5 w-12 bg-slate-100 top-1/2 -left-12'>
                     <div className='relative bottom-1 block w-2.5 h-2.5 rounded-e-full rounded-t-full rounded-r-full rounded-b-full rounded-l-full right-2.5 bg-slate-100'></div>
                   </div>
